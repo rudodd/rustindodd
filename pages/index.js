@@ -2,9 +2,11 @@
 import React, {useState, useEffect} from 'react';
 
 // import components
+import Avatar from '../components/Avatar';
+import Content from '../components/Content';
 import Head from 'next/head';
 import Header from '../components/Header';
-import Image from 'next/image';
+import Intro from '../components/Intro';
 
 export default function Home() {
 
@@ -36,13 +38,9 @@ export default function Home() {
       </Head>
       <Header showContent={showContent} setContent={setSelectedContent} />
       <main>
-        <div className={`avatar${!showContent ? ' hidden' : ''}`}>
-          <Image src="/img/rustin-dodd.jpg" height="200" width="200" alt="Rustin Dodd" priority className={selectedContent != 'code' ? 'hidden' : ''} />
-          <Image src="/img/ezra-foster.jpg" height="200" width="200" alt="Ezra Foster" className={selectedContent != 'music' ? 'hidden' : ''} />
-        </div>
-        <div className={`intro${introTextSmall ? ' small' : ''}`}>
-          <h1><span className={!textOneVisible ? 'hidden' : '' }>Well, </span><span className={!textTwoVisible ? 'hidden' : '' }>hello there.</span></h1>
-        </div>
+        <Avatar selectedContent={selectedContent} showContent={showContent} />
+        <Intro introTextSmall={introTextSmall} textOneVisible={textOneVisible} textTwoVisible={textTwoVisible} />
+        <Content selectedContent={selectedContent} showContent={showContent} />
       </main>
     </>
   )

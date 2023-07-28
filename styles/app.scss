@@ -31,6 +31,12 @@ header {
   display:flex;
   max-width: var(--max-width);
   margin: auto;
+  opacity: 100%;
+  transition: ease all 0.5s;
+
+  &.hidden {
+    opacity: 0%;
+  }
 
   .logo {
     background: var(--text-color);
@@ -48,8 +54,6 @@ header {
     display: flex;
     margin-left: auto;
     min-height: 100%;
-    opacity: 100%;
-    transition: ease all 0.5s;
 
     &::after {
       position: absolute;
@@ -60,10 +64,6 @@ header {
       bottom: 0;
       transition: ease all 0.5s;
       margin: 0 0.5rem;
-    }
-
-    &.hidden {
-      opacity: 0%;
     }
 
     &.code {
@@ -110,6 +110,7 @@ main {
     height: 200px;
     width: 200px;
     opacity: 100%;
+    transform: translateX(2rem);
     transition: ease all 0.5s;
     border-radius: 50%;
     overflow: hidden;
@@ -137,9 +138,10 @@ main {
     line-height: 3rem;
 
     &.small {
-      font-size: 2rem;
-      line-height: 2rem;
+      font-size: 0.85rem;
+      line-height: 1rem;
       transition: linear all 0.05s;
+      opacity: 50%;
     }
 
     h1 {
@@ -154,6 +156,83 @@ main {
         }
       }
 
+    }
+  }
+
+  .content {
+    opacity: 100%;
+    transition: ease all 0.5s;
+
+    &.hidden {
+      opacity: 0%;
+    }
+
+    h2 {
+      font-size: 5rem;
+      line-height: 1;
+      margin: 2.5rem 0 1rem;
+    }
+
+    h3 {
+      font-size: 2.75rem;
+      line-height: 1;
+      margin: 0;
+      font-style: italic;
+      margin-bottom: 3rem;
+      opacity: 50%;
+
+      img {
+        transform: translateY(5px);
+      }
+    }
+
+    h4 {
+      font-size: 1.5rem;
+      margin: 2.5rem 0 0.75rem 0;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.75rem;
+      max-width: 75%;
+    }
+
+    .length-selector {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      button {
+        background: none;
+        color: var(--text-color);
+        border: solid 2px var(--text-color);
+        font-family: 'Lato', sans-serif;
+        font-size: 1rem;
+        cursor: pointer;
+        line-height: 1;
+        padding: 0.5rem 0.65rem;
+        border-radius: 5px;
+
+        &.selected {
+          background: var(--text-color);
+          color: var(--bg-color);
+          font-weight: 600;
+        }
+      }
+    }
+
+    .connect-buttons {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      a {
+        background: none;
+        border: 0;
+        padding: 0;
+        color: var(--text-color)
+        
+      }
     }
   }
 }

@@ -24,9 +24,9 @@ export default function Header(props) {
   }, [selectedItem])
 
   return (
-    <header>
+    <header className={!visible ? ' hidden' : ''}>
       <div className="logo">RD</div>
-      <div className={`menu ${selectedItem}${!visible ? ' hidden' : ''}`}>
+      <div className={`menu ${selectedItem}`}>
         <button onClick={() => setSelectedItem('code')}>
           <Icon fontSize="large" component={TerminalIcon} />
         </button>
