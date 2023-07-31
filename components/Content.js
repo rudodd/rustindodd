@@ -64,21 +64,21 @@ export default function Content(props) {
           <div className="music-projects">
             <div>
               <div className="artist-image">
-                <Image src="/img/artists/ezra-foster.jpg" width="200" height="150" alt="Ezra Foster" />
+                <Image src="/img/artists/ezra-foster.jpg" width="200" height="150" alt="Ezra Foster" priority />
               </div>
               <h5>Ezra Foster</h5>
               <Link href="https://www.ezrafoster.com" className="artist-button">Learn more</Link>
             </div>
             <div>
               <div className="artist-image">
-                <Image src="/img/artists/dr-floydbeck.jpg" width="200" height="150" alt="Dr. Floydbeck" />
+                <Image src="/img/artists/dr-floydbeck.jpg" width="200" height="150" alt="Dr. Floydbeck" priority />
               </div>
               <h5>Dr. Floydbeck</h5>
               <Link href="https://www.drfloydbeck.com" className="artist-button">Learn more</Link>
             </div>
             <div>
               <div className="artist-image">
-                <Image src="/img/artists/crouch-and-foster.jpg" width="200" height="150" alt="Crouch and Foster" />
+                <Image src="/img/artists/crouch-and-foster.jpg" width="200" height="150" alt="Crouch and Foster" priority />
               </div>
               <h5>Crouch and Foster</h5>
               <Link href="https://www.crouchandfoster.com" className="artist-button">Learn more</Link>
