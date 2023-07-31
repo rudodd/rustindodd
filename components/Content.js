@@ -30,15 +30,15 @@ export default function Content(props) {
             <>
               {storyLength == 'long' ? (
                 <>
-                  <p>Like most developers here in Austin, I moved here ~15 years ago to start my music career.  Luckily, I've been able to support my music habit by designing and building websites for damn near the whole time, though it didn't always pay so well.</p>
-                  <p>I started my "real" career designing websites at a local IT Services company because, back in the day, people hired their IT company to build their website. I eventually grew tired of how other people coded my designs (designers can be picky) and learned how to code them myself.</p>
-                  <p>Working at small companies means I wore a lot of hats.  I found myslef taking on marketing and minor management responsibilities in addition to my design and development roles, and that's what really changed everything.  I hated it.  I hated marketing, I got burned out on design, and realized I just wanted to code.</p>
-                  <p>Some time around 8 years ago, I decided to focus on becoming a full-time developer, only a developer, and a damn good developer.  Not sure that I'm a damn good developer yet, but I'm good.  I currently work for IBM on a team called Z DevOps Innovation Lab (I know, a mouthful) building internal applications using React and Next.js.</p>
+                  <p>Like most developers here in Austin, I moved here ~15 years ago to start my music career. Luckily, I've been able to support my music habit by designing and building websites for damn near the whole time, though it didn't always pay so well.</p>
+                  <p>I started my "real" career designing websites at a local IT Services company because, back in the day, people hired their IT company to build their website. I eventually grew tired of how other people coded my designs (designers can be picky) and learned how to code them myself</p>
+                  <p>Working at small companies means I wore a lot of hats. I found myself taking on marketing and minor management responsibilities in addition to my design and development roles, and that's what really changed everything. I hated it. I hated marketing, I got burned out on design, and realized I just wanted to code.</p>
+                  <p>Some time around 8 years ago, I decided to focus on becoming a full-time developer, only a developer, and a damn good developer. Not sure that I'm a damn good developer yet, but I'm good. I currently work for IBM on a team called Z DevOps Innovation Lab (I know, a mouthful) building internal applications using React and Next.js..</p>
                 </>
               ) : storyLength == 'short' ? (
                 <>
-                  <p>I started my career designing and building websites at a local IT Services company which was the first step in my journey into front-end development.  I spent nearly a decade working in small companies that required me to wear various hats that limited the time I spent doing development, and candidly, it took me too long to realize that I hated it.</p>
-                  <p>Some time around 8 years ago, I decided to focus soley on being a developer. I currently work for IBM on a team called Z DevOps Innovation Lab (I know, a mouthful) building internal applications using React and Next.js.</p>
+                  <p>I started my career designing and building websites at a local IT Services company, which was the first step in my journey into front-end development. I spent nearly a decade working in small companies that required me to wear various hats that limited the time I spent doing development, and candidly, it took me too long to realize that I hated it.</p>
+                  <p>Some time around 8 years ago, I decided to focus solely on being a developer. I currently work for IBM on a team called Z DevOps Innovation Lab (I know, a mouthful) building internal applications using React and Next.js.</p>
                 </>
               ) : (
                 <p>I am a developer with 10+ years of experience.  I currently work for IBM building internal applications using React and Next.js.</p>
@@ -59,7 +59,7 @@ export default function Content(props) {
       ) : (
         <>
           <h3>I'm a song-writer and recording artist.</h3>
-          <p>Music is a through-line in my life.  I've had a love of music as long as I can remember and began to learn how to play instruments in the 5th grade.  I focus my energy on writing and recording.</p>
+          <p>Music is a through-line in my life.  I've had a love for music as long as I can remember and began to learn how to play instruments in the 5th grade.  I focus my energy on writing and recording.</p>
           <h4>My projects:</h4>
           <div className="music-projects">
             <div>
