@@ -34,7 +34,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Rustin Dodd - Austin, Texas based Front-End Developer nd Musician</title>
+        <title>Rustin Dodd - Austin, Texas based Front-End Developer and Musician</title>
       </Head>
       <Header showContent={showContent} setContent={setSelectedContent} />
       <main>
