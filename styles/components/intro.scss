@@ -1,0 +1,33 @@
+/**
+ * Style for the Intro component ************************************
+ **/
+
+.intro {
+  font-size: 3rem;
+  line-height: 3rem;
+
+  @include tablet-down {
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+
+  &.small {
+    font-size: 0.85rem;
+    line-height: 1rem;
+    transition: linear all 0.05s;
+    opacity: 50%;
+  }
+
+  h1 {
+    margin: 0;
+    
+    span {
+      opacity: 100%;
+      transition: ease all 0.5s;
+
+      &.hidden {
+        opacity: 0%;
+      }
+    }
+  }
+}

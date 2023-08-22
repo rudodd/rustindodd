@@ -1,0 +1,72 @@
+/**
+ * Styles for the Header component **********************************
+ **/
+
+ header {
+  display:flex;
+  max-width: var(--max-width);
+  margin: auto;
+  opacity: 100%;
+  transition: ease all 0.5s;
+
+  &.hidden {
+    opacity: 0%;
+  }
+
+  .logo {
+    background: var(--text-color);
+    color: var(--bg-color);
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 1;
+    display: inline-block;
+    padding: 1rem 0.75rem;
+    border-radius: 5px;
+  }
+
+  .menu {
+    position: relative;
+    display: flex;
+    margin-left: auto;
+    min-height: 100%;
+
+    &::after {
+      position: absolute;
+      content: '';
+      height: 3px;
+      width: calc(50% - 1rem);
+      background: var(--text-color);
+      bottom: 0;
+      transition: ease all 0.5s;
+      margin: 0 0.5rem;
+    }
+
+    &.code {
+
+      &::after {
+        transform: translateX(0);
+      }
+    }
+
+    &.music {
+
+      &::after {
+        transform: translateX(calc(100% + 1rem));
+      }
+    }
+    
+    button {
+      background: none;
+      border: 0;
+      font-size: large;
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 1rem;
+      cursor: pointer;
+    }
+  }
+}

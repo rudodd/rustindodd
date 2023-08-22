@@ -1,0 +1,189 @@
+/**
+ * Styles for the Content component **********************************
+ **/
+
+.content {
+  opacity: 100%;
+  transition: ease all 0.5s;
+
+  @include tablet-down {
+    max-width: 70%;
+  }
+
+  @include for-phone-only {
+    max-width: none;
+  }
+
+  &.hidden {
+    opacity: 0%;
+  }
+
+  h2 {
+    font-size: 5rem;
+    line-height: 1;
+    margin: 2.5rem 0 1rem;
+
+    @include tablet-down {
+      font-size: 3.5rem;
+    }
+
+    @include for-phone-only {
+      font-size: 2.5rem;
+    }
+  }
+
+  h3 {
+    font-size: 2.75rem;
+    line-height: 1;
+    margin: 0;
+    font-style: italic;
+    margin-bottom: 3rem;
+    opacity: 50%;
+
+    @include tablet-down {
+      font-size: 1.85rem;
+    }
+
+    img {
+      transform: translateY(5px);
+      filter: var(--img-invert);
+
+      @include tablet-down {
+        width: 67px;
+        height: 30px;
+      }
+    }
+  }
+
+  h4 {
+    font-size: 1.5rem;
+    margin: 2.5rem 0 0.75rem 0;
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.75rem;
+    max-width: 75%;
+
+    @include tablet-down {
+      max-width: none;
+    }
+  }
+
+  .length-selector {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+
+    p {
+
+      @include tablet-down {
+        width: 100%;
+      }
+    }
+
+    button {
+      background: none;
+      color: var(--text-color);
+      border: solid 2px var(--text-color);
+      font-family: 'Lato', sans-serif;
+      font-size: 1rem;
+      cursor: pointer;
+      line-height: 1;
+      padding: 0.5rem 0.65rem;
+      border-radius: 5px;
+
+      &.selected {
+        background: var(--text-color);
+        color: var(--bg-color);
+        font-weight: 600;
+      }
+    }
+  }
+
+  .connect-buttons {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    .connect-link {
+      background: none;
+      color: var(--text-color);
+      border: solid 2px var(--text-color);
+      padding: 0.5rem;
+      border-radius: 50%;
+
+      &.linkedin {
+        padding: 0.35rem 0.45rem;
+      }
+
+      &.hackerrank {
+        text-decoration: none;
+        
+        p {
+          margin: 0;
+          padding: 0.6rem 0.45rem 0.6rem 0.35rem;
+          font-size: 1.055rem;
+          line-height: 1.055rem;
+          font-weight: 900;
+          background: var(--text-color);
+          color: var(--bg-color);
+          border-radius: 50%;
+
+          span {
+            display: inline-block;
+            height: 0.8rem;
+            width: 0.55rem;
+            background: var(--bg-color);
+            margin-left: 1px;
+          }
+        }
+      }
+    }
+  }
+  
+  .music-projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem 2rem;
+
+    > div {
+
+      @include tablet-down {
+        width: calc(50% - 1.5rem);
+      }
+
+      @include for-phone-only {
+        width: 100%;
+      }
+
+      .artist-image {
+        border: solid 3px var(--text-color);
+        border-radius: 10px;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          margin-bottom: -5px;
+        }
+      }
+
+      h5 {
+        font-size: 1.25rem;
+        line-height: 1;
+        margin: 1rem 0 2rem;
+      }
+
+      .artist-button {
+        color: var(--text-color);
+        border: solid 2px var(--text-color);
+        border-radius: 5px;
+        text-decoration: none;
+        padding: 0.3rem 0.75rem 0.5rem;
+      }
+    }
+  }
+}
