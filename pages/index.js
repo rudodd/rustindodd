@@ -1,7 +1,7 @@
-// import library functionality
+// Import library functionality
 import React, {useState, useEffect} from 'react';
 
-// import components
+// Import components
 import Avatar from '../components/Avatar';
 import Content from '../components/Content';
 import Head from 'next/head';

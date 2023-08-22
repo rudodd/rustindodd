@@ -1,0 +1,48 @@
+/**
+ * Style for the Avatar component ***********************************
+ **/
+
+.avatar {
+  position: absolute;
+  top: 4rem;
+  right: 0;
+  height: 200px;
+  width: 200px;
+  opacity: 100%;
+  transform: translateX(2rem);
+  transition: ease all 0.5s;
+  border-radius: 50%;
+  overflow: hidden;
+  border: solid 5px var(--text-color);
+
+  @include tablet-down {
+    height: 150px;
+    width: 150px;
+    transform: translateX(0.5rem);
+  }
+
+  @include for-phone-only {
+    display: none;
+  }
+
+  &.hidden {
+    opacity: 0%;
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 100%;
+    transition: ease all 0.5s;
+
+    @include tablet-down {
+      height: 150px;
+      width: 150px;
+    }
+
+    &.hidden {
+      opacity: 0%;
+    }
+  }
+}

@@ -43,18 +43,20 @@ export default function Content(props) {
               ) : (
                 <p>I am a developer with 10+ years of experience.  I currently work for IBM building internal applications using React and Next.js.</p>
               )}
-              <h4>Let's connect:</h4>
-              <div className="connect-buttons">
-                <Link href="https://www.linkedin.com/in/rustindodd/">
-                  <Icon component={LinkedInIcon} fontSize="large" />
-                </Link>
-                <Link href="https://github.com/rudodd">
-                  <Icon component={GitHubIcon} fontSize="large" />
-                </Link>
-              </div>
             </>          
           }
-
+          <h4>Let's connect:</h4>
+          <div className="connect-buttons">
+            <Link href="https://www.linkedin.com/in/rustindodd/" className="connect-link linkedin" >
+              <Icon component={LinkedInIcon} fontSize="large" />
+            </Link>
+            <Link href="https://github.com/rudodd">
+              <Icon component={GitHubIcon} fontSize="large" className="connect-link github" />
+            </Link>
+            <Link href="https://www.hackerrank.com/rustindodd" className="connect-link hackerrank">
+              <p>H<span></span></p>
+            </Link>
+          </div>
         </>
       ) : (
         <>
