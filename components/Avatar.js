@@ -1,4 +1,4 @@
-// import componenets
+// Import componenets
 import Image from 'next/image';
 
 export default function Avatar(props) {

@@ -1,7 +1,7 @@
-// import library functionality
+// Import library functionality
 import React, { useState, useEffect } from 'react';
 
-// import components
+// Import components
 import Icon from '@mui/material/Icon';
 import NextImage from 'next/image';
 import Link from 'next/link';

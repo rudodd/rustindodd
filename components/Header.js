@@ -1,7 +1,7 @@
-// import library functionality
+// Import library functionality
 import React, { useEffect, useState } from 'react';
 
-// import componenets
+// Import componenets
 
 import Icon from '@mui/material/Icon';
 import TerminalIcon from '@mui/icons-material/Terminal';
