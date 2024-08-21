@@ -26,7 +26,7 @@ export default function Content(props) {
       {selectedContent == 'code' ? (
         <>
           <h3>I'm a front-end developer @ {<Link href="https://www.ibm.com"><NextImage src="/img/ibm.jpg" width="100" height="45" alt="IBM" priority /></Link>}.</h3>
-          <p>I am a developer with 10+ years of experience.  I currently work for IBM where I build and maintain internal-facing applications using React, the IBM Carbon design system, and Next.js.</p>
+          <p>I am a developer with 8+ years of experience.  I currently work for IBM where I build and maintain internal-facing applications using React, the IBM Carbon design system, and Next.js.</p>
           <h4>Let's connect:</h4>
           <div className="connect-buttons">
             <Link href="https://www.linkedin.com/in/rustindodd/" className="connect-link linkedin" >
@@ -35,15 +35,15 @@ export default function Content(props) {
             <Link href="https://github.com/rudodd">
               <Icon component={GitHubIcon} fontSize="large" className="connect-link github" />
             </Link>
-            <Link href="https://www.hackerrank.com/rustindodd" className="connect-link hackerrank">
+            {/* <Link href="https://www.hackerrank.com/rustindodd" className="connect-link hackerrank">
               <p>H<span></span></p>
-            </Link>
+            </Link> */}
           </div>
         </>
       ) : (
         <>
           <h3>I'm a song-writer and recording artist.</h3>
-          <p>Music is a through-line in my life.  I've had a love  music as long as I can remember and began to learn how to play instruments in the 5th grade.  I focus my energy on writing and recording.</p>
+          <p>Music is a through-line in my life.  I've had a love of music as long as I can remember and began to learn how to play instruments in the 5th grade.  I focus my energy on writing and recording.</p>
           <h4>My projects:</h4>
           <div className="music-projects">
             <div>
